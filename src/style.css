@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  background-color: teal;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  transition: margin .5s ease-out;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.input {
+  margin-right: 20px;
+  padding: 25px;
+  border-radius: 5px;
+  border: none;
+
+  font-size: 32px;
+}
+
+.input:focus,
+.input:active {
+  outline: none;
+  border: 3px solid rgb(216, 112, 147);
+  padding: 22px;
+}
+
+.start-game {
+  padding: 25px;
+  border-radius: 5px;
+  border: none;
+
+  font-size: 32px;
+  background-color: rgb(216, 112, 147);
+  color: wheat;
+
+  transition-property: color, background-color, padding, border;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.start-game:disabled {
+  color: rgb(128, 128, 128, .7);
+}
+
+.start-game:focus {
+  outline: none;
+  border: 3px solid wheat;
+  padding: 22px;
+}
+
+.start-game:hover {
+  border: 3px solid wheat;
+  padding: 22px;
+}
+
+.start-game:active {
+  background-color: rgb(231, 60, 117);
+}
+
+.board {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 15px 15px;
+  padding: 20px;
+  border-radius: 15px;
+
+  list-style: none;
+  background-color: wheat;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 32px;
+
+  background-color: rgb(231, 60, 117);
+}
+
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5% 5%;
+  width: 45%;
+  height: 80vh;
+  border-radius: 15px;
+  padding: 20px;
+
+  list-style: none;
+
+  background-color: azure;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  flex: 2 1 20%;
+
+  font-size: 32px;
+
+  background-color: lightsalmon;
+} */
