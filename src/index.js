@@ -6,7 +6,7 @@
   let lockBoard = false;
   let firstCard;
   let secondCard;
-  let time = 10;
+  let time = 60;
   let current;
   let timerId;
   let counter = 0;
