@@ -25,7 +25,7 @@ See the overall result
 ![Start view](./screenshots/6-by-6.png)
 
 10 by 10 board view
-![Start view](./screenshots/6-by-6.png)
+![Start view](./screenshots/10-by-10.png)
 
 
 
